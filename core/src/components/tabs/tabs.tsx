@@ -302,7 +302,7 @@ export class Tabs implements NavOutlet {
       <div class="tabs-inner">
         <slot></slot>
       </div>,
-
+      <slot name="tabbar"></slot>,
       !this.tabbarHidden && (
         <ion-tabbar
           tabs={this.tabs.slice()}
